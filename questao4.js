@@ -1,4 +1,5 @@
 //Questao 4 da lista de exercicios
+// Obs: essa questão foi rodada em node
 // q4.1
 gods.forEach((god) => (console.log(god.name + " " + god.features.length)))
 //pega cada um dos personagens e imprime o nome e o tamanho das features
