@@ -8,6 +8,22 @@
 <body>
     <script>
         
+        //Questão 3 da lista de exercicios
+        var notas = prompt("Digite as notas(separadas por espaço): ").split(" ") // divide notas e coloca em um array
+
+        //console.log(notas) // se quiser verificar notas
+
+        if (notas.length != 3 || (notas[0] > 10 || notas[0]<0) || (notas[1] > 10 || notas[1]<0) || (notas[2] > 10 || notas[2]<0)){ //Para o usuário não poder botar mais ou menos de 3 notas e notas maiores que 10 ou menores que 0.
+            alert("Ocorreu um erro!")
+        } else {
+            media = (parseFloat(notas[0]) + parseFloat(notas [1]) + parseFloat(notas [2])) / 3 // tipagem para que nada ocorra de forma errada
+            if (media >= 6){
+                console.log("Aprovado")
+            } else {
+                console.log("Reprovado")
+            }
+        }
+
     </script>
 </body>
 </html>
