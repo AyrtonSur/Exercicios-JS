@@ -7,7 +7,19 @@
 </head>
 <body>
     <script>
-        
+        //Questão extra número 2 da lista de exercicios
+        var x = parseInt(prompt("Digite o valor inteiro x: "))
+        var n = parseInt(prompt("Digite o valor inteiro n: "))
+        //pede os 2 valores de forma individual
+
+        function power(x, n){
+            if (n==0){
+                return 1 
+            }
+            return x * power(x, n-1) // chama a função novamente até que n seja igual a 0
+        }
+
+        console.log(power(x, n))
     </script>
 </body>
 </html>
