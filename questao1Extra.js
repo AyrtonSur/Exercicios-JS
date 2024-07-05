@@ -1,3 +1,4 @@
+//Questão extra número 1 da lista de exercicios
 function comparaPositivos(num){
     if (num > 0) return true
     return false
